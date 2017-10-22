@@ -4,15 +4,18 @@
 <head>
     <title>Благотворительный сайт</title>
     <meta charset="utf-8">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
     <link href="/css/style.css" rel='stylesheet' type='text/css' />
+    <link href="/css/mobile.css" rel='stylesheet' type='text/css' />
     <link href="/images/logo4.png" rel="icon" />
     <link rel="stylesheet" type="text/css" href="/css/magnific-popup.css">
     <!-- Custom Theme files -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -50,6 +53,7 @@
 <body>
     <!-- header -->
    {%block main_class %} {% endblock %}
+    <div id="wrapper">
      <div class="header">
          <div class="container">
              <!-- logo -->
@@ -57,11 +61,11 @@
 
                  <a href="/"><img src="/images/logo4.png" title="Help hand" />
 
-                     <div><h1>Zhardam</h1></div></a>
+                     <div><h1>Birimdik</h1></div></a>
              </div>
              <!-- /logo -->
              <!-- top-nav -->
-                <div class="top-nav">
+                <div class="top-nav" id="nav">
                     <span class="menu"> </span>
                     <ul>
                         <li {%if url == "/" %} class="active" {% endif %} ><a href="/">Главная</a></li>
@@ -209,19 +213,21 @@
                         <li><a class="twitter" href="#"><span> </span></a></li>
                         <li><a class="fb" href="#"><span> </span></a></li>
                         <li><a class="you" href="#"><span> </span></a></li>
-                        <li><a class="in" href="#"><span> </span></a></li>
                         <div class="clearfix"> </div>
                     </ul>
                 </div>
                 <div class="col-md-4 footer-grid-text">
                     <h3>Подпишитесь на наши новости</h3>
-                    <p>Lorem Ipsum is simply dummy text of theprinting and typesetting industry.</p>
-                    form method="post" action="contact-post.html">
                     <a class="sign-btn" href="/register.html">Подписаться</a>
                 </div>
                 <div class="col-md-4 copy-right">
                     <p>&copy; Все права защищены &nbsp;</p>
                 </div>
+                <script src="/js/jquery.dropotron.min.js"></script>
+			<script src="/js/skel.min.js"></script>
+			<script src="/js/skel-viewport.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
                 <div class="clearfix"> </div>
             </div>
         </div>
@@ -245,14 +251,9 @@
         });
 
     </script>
-    <script src="/vendor/jquery/jquery.min.js"></script>
-    <script src="/vendor/popper/popper.min.js"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <!-- Custom scripts for all pages-->
-    <script src="/js/sb-admin.min.js"></script>
+    
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</div>
 </body>
 
 </html>

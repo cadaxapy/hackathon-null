@@ -107,18 +107,20 @@ font-family:'Arimo', sans-serif;
 	-webkit-background-size:cover;
 	-o-background-size:cover;
 	-moz-background-size:cover;
-	min-height:950px;
+	min-height:750px;
 	background-size: 100% 100%;	
 	position: relative;
 }
 /*-- slider-caption --*/
 .slider-caption {
+	background-color: rgba(254, 254, 254, 0.7);
 	position: absolute;
 	top: 0;
 	z-index: 999;
-	left:28%;
-	top:44%;
-	width:45%;
+	left:0;
+	top:86px;
+	width:100%;
+	padding: 10px;
 	margin: 0 auto;
 }
 .slider-caption h2{
@@ -127,7 +129,7 @@ font-family:'Arimo', sans-serif;
 	font-size: 3.4em;
 	margin: 0 auto;
 	padding: 0;
-	color: #FFF;
+	color: #DA515B;
 	font-family: 'Arimo', sans-serif;
 	text-align: center;
 	width: 77%;
@@ -2472,8 +2474,8 @@ a.sign-btn {
 	width:55%;
 }
 a.sign-btn:hover{
-	border:2px dotted#333;
-	background:#d0ae89;
+	border:2px solid#333;
+	background:#DA515B;
 	color:#333;
 	text-decoration: none;
 }
@@ -2605,9 +2607,9 @@ a.slide-btn{
     margin-bottom: 1em;
 }
 .slider-caption {
-    background-color: rgba( 200, 200, 200, 0.423 );
+    background-color: rgba( 200, 200, 200, 0.823 );
 	z-index: 999;
-	left: 20%;
+	left: 0;
 	top: 25%;
 	width: 56%;
 	}
@@ -2993,6 +2995,51 @@ a.slide-btn{
 	}
 }
 @media(max-width:480px){
+    div.logo {
+        top: 0;
+        left: 45px;
+        float: left;
+        position: absolute;
+        width: 40%;
+        height: 40px;
+	}
+	.logo a img {
+        display: block;
+	    width: 40px;
+        height: 40px;
+	}
+    div.logo a div{
+        top: 10px;
+        padding-left: 10px;
+        height: 40px;
+        width: auto;
+        margin: 0;
+    }
+    div.logo a div h1{
+        margin: auto 0;
+        font-size: 18px;
+    }
+	.logo span {
+	font-size: 0.65em;
+	}
+    div.top-nav{
+        display: none;
+    }
+    div.sign-box{
+        font-size: 10px;
+        height: 15px;
+        top: 5px;
+        right: 0;
+    }
+    div#sb-sign.sb-sign{
+        margin-right: 5px;
+        padding: 5px;
+        right: 0;
+        height: 33px;
+    }
+    .search-box{
+        display: none;
+    }
 	.sb-search {
 	width: 0%;
 	top: 3px;
@@ -3065,7 +3112,6 @@ a.slide-btn{
 	float: left;
 	position: absolute;
 	top: -3px;
-	background: #a7d5ec;
 	padding: 0em 0em 0.6em 0.2em;
 	}
 	.container {
@@ -3156,23 +3202,47 @@ a.slide-btn{
 	}
 }
 @media(max-width:320px){
+    div.top-nav{
+        display: none;
+    }
+    div.sign-box{
+        font-size: 10px;
+        height: 15px;
+        top: 5px;
+        right: 0;
+    }
+    div#sb-sign.sb-sign{
+        margin-right: 5px;
+        padding: 5px;
+        right: 0;
+        height: 33px;
+    }
 	.container {
 	width: 269px;
 	}
-	.logo {
-	float: left;
-	position: absolute;
-	top: -3px;
-	background: #a7d5ec;
-	padding: 0em 0em 0.6em 0.2em;
-	width: 39%;
+	div.logo {
+        left: 45px;
+        float: left;
+        position: absolute;
+        width: 30%;
+        height: 40px;
 	}
 	.logo a img {
-	width: 100%;
+        display: none;
+	    width: 40px;
+        height: 40px;
 	}
-	.logo a h1 {
-	font-size: 1.2em;
-	}
+    div.logo a div{
+        top: 15px;
+        padding-left: 10px;
+        height: 40px;
+        width: auto;
+        margin: 0;
+    }
+    div.logo a div h1{
+        margin: auto 0;
+        font-size: 15px;
+    }
 	.logo span {
 	font-size: 0.65em;
 	}
@@ -3189,16 +3259,24 @@ a.slide-btn{
 	font-size: 1.4em;
 	}
 	.slider-caption p {
-	display: none;
+	display: block;
 	}
 	a.slide-btn {
-	display: none;
+        font-size: 13px;
+        padding: 2px;
+        margin: 5px;
+        width: auto;
 	}
 	.slider-caption {
-	left: 13%;
-	top: 23%;
-	width: 79%;
+        top: 25%;
+        width: 100%;
+        left: 0;
 	}
+    .slider-caption h2{
+        
+        font-size: 20px;
+        height: auto;
+    }
 	.twitter-weights h3 {
 	font-size: 1.2em;
 	}
@@ -3208,7 +3286,7 @@ a.slide-btn{
 		margin: 0 auto;
 		overflow: hidden;
 		height: 49px;
-		width: 229px;
+		width: 100%;
 	}
 	.contact {
 	background: url(../images/story-bg.png)no-repeat;
@@ -3245,17 +3323,10 @@ a.slide-btn{
 		height: 86px;
 	}
 	a.story-btn {
-	padding: 0.6em 0.8em;
-	font-size: 0.9em;
-	width: 62%;
-	margin: 1em 0;
-	}
-	.story-grid.two a.story-btn {
-	width:62%;
-	font-size: 0.9em;
-	}
-	.story-grid.two {
-	padding: 1.2em 2em 0 1em;
+        padding: 0.6em 0.8em;
+        font-size: 0.9em;
+        width: auto;
+        margin: 1em 0;
 	}
 	.story-grids {
 	background: url(../images/story-bg.png);
@@ -3305,13 +3376,14 @@ a.slide-btn{
 		padding: 0.3em 0;
 	}
 	.copy-right p {
-	font-size: 1.1em;
+	    font-size: 10px;    
 	}
 	a.sign-btn {
-	margin-top: 0.3em;
-	font-size: 1em;
-	padding: 0.6em 1em;
-	width: 54%;
+        display: block;
+        width: auto;
+        margin-top: 0.3em;
+        font-size: 10px;
+        padding: 0.6em 1em;
 	}
 	.part-grid h3 {
 	font-size: 1.2em;
@@ -3472,4 +3544,16 @@ a.slide-btn{
     right: 10px;
     top: 17px;
     float: right;
+}
+
+body > div.Signup-section{
+    background-color: #fff;
+    background: #fff;
+    min-height: 250px;
+}
+body > div.Signup-section > div > div{
+    margin: 0;
+}
+body > div.Signup-section > div > div > div.register{
+    margin: auto;
 }
